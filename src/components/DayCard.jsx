@@ -67,10 +67,10 @@ function DayCard({ date, summaries, onViewDetails, onViewTodos }) {
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">{formatDate(date)}</h3>
           <div className="flex items-center">
-            <span className="text-xs text-slate-500 dark:text-slate-400">{summaries.length} {summaries.length === 1 ? 'summary' : 'summaries'}</span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">{summaries.length} {summaries.length === 1 ? 'บทสรุป' : 'บทสรุป'}</span>
             <span className="mx-2 text-slate-300 dark:text-slate-600">•</span>
             <span className="text-xs text-slate-500 dark:text-slate-400">
-              {summaries.reduce((total, summary) => total + summary.keyPoints.length, 0)} key points
+              {summaries.reduce((total, summary) => total + summary.keyPoints.length, 0)} ประเด็นสำคัญ
             </span>
           </div>
         </div>
@@ -86,7 +86,7 @@ function DayCard({ date, summaries, onViewDetails, onViewTodos }) {
             <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
             </svg>
-            Todos
+            สิ่งที่ต้องทำ
           </div>
         </ActionButton>
       </div>
@@ -125,7 +125,7 @@ function DayCard({ date, summaries, onViewDetails, onViewTodos }) {
           size="md"
         >
           <div className="flex items-center">
-            <span>View Full Summary</span>
+            <span>ดูบทสรุปเต็ม</span>
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>

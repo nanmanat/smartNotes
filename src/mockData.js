@@ -5,34 +5,34 @@ export const summariesByDate = [
     summaries: [
       {
         id: 1,
-        title: "Morning Meeting",
+        title: "การประชุมตอนเช้า",
         mode: "meeting",
-        summary: "Discussed Q2 results and planning for Q3. Sales exceeded targets by 8%.",
+        summary: "พูดคุยเกี่ยวกับผลลัพธ์ไตรมาส 2 และการวางแผนสำหรับไตรมาส 3 ยอดขายเกินเป้าหมาย 8%",
         keyPoints: [
-          "Q2 sales exceeded targets by 8%",
-          "Marketing expenses were on budget",
-          "New product launch scheduled for Q3"
+          "ยอดขายไตรมาส 2 เกินเป้าหมาย 8%",
+          "ค่าใช้จ่ายทางการตลาดอยู่ในงบประมาณ",
+          "กำหนดการเปิดตัวผลิตภัณฑ์ใหม่ในไตรมาส 3"
         ],
         todoItems: [
-          "Prepare Q3 marketing plan",
-          "Schedule product launch meeting",
-          "Review sales targets for Q3"
+          "เตรียมแผนการตลาดไตรมาส 3",
+          "กำหนดการประชุมเปิดตัวผลิตภัณฑ์",
+          "ทบทวนเป้าหมายการขายสำหรับไตรมาส 3"
         ]
       },
       {
         id: 2,
-        title: "Personal Notes",
+        title: "บันทึกส่วนตัว",
         mode: "personal",
-        summary: "Brainstormed ideas for the new project. Need to focus on user experience and performance.",
+        summary: "ระดมความคิดสำหรับโครงการใหม่ ต้องเน้นเรื่องประสบการณ์ผู้ใช้และประสิทธิภาพ",
         keyPoints: [
-          "User experience is a priority",
-          "Performance optimization needed",
-          "Consider mobile-first approach"
+          "ประสบการณ์ผู้ใช้เป็นสิ่งสำคัญ",
+          "จำเป็นต้องปรับปรุงประสิทธิภาพ",
+          "พิจารณาแนวทางมือถือก่อน"
         ],
         todoItems: [
-          "Create wireframes for new UI",
-          "Research performance optimization techniques",
-          "Schedule meeting with UX team"
+          "สร้างโครงร่างสำหรับ UI ใหม่",
+          "วิจัยเทคนิคการเพิ่มประสิทธิภาพ",
+          "กำหนดการประชุมกับทีม UX"
         ]
       }
     ]
@@ -42,18 +42,18 @@ export const summariesByDate = [
     summaries: [
       {
         id: 3,
-        title: "Physics Lecture",
+        title: "บรรยายวิชาฟิสิกส์",
         mode: "classroom",
-        summary: "Lecture on quantum mechanics and wave-particle duality. Covered Schrödinger's equation and its applications.",
+        summary: "บรรยายเกี่ยวกับกลศาสตร์ควอนตัมและทวิภาวะคลื่น-อนุภาค ครอบคลุมสมการของชเรอดิงเงอร์และการประยุกต์ใช้",
         keyPoints: [
-          "Wave-particle duality explains quantum behavior",
-          "Schrödinger's equation describes quantum systems",
-          "Quantum entanglement is a key concept"
+          "ทวิภาวะคลื่น-อนุภาคอธิบายพฤติกรรมควอนตัม",
+          "สมการของชเรอดิงเงอร์อธิบายระบบควอนตัม",
+          "ความพัวพันควอนตัมเป็นแนวคิดสำคัญ"
         ],
         todoItems: [
-          "Review lecture notes",
-          "Complete homework problems",
-          "Read chapter 7 in textbook"
+          "ทบทวนบันทึกการบรรยาย",
+          "ทำแบบฝึกหัดให้เสร็จ",
+          "อ่านบทที่ 7 ในตำรา"
         ]
       }
     ]
@@ -63,34 +63,34 @@ export const summariesByDate = [
     summaries: [
       {
         id: 4,
-        title: "Team Standup",
+        title: "การประชุมทีมแบบยืน",
         mode: "meeting",
-        summary: "Daily standup meeting. Discussed progress on current sprint tasks and blockers.",
+        summary: "การประชุมยืนประจำวัน พูดคุยเกี่ยวกับความคืบหน้าของงานในสปรินต์ปัจจุบันและอุปสรรคต่างๆ",
         keyPoints: [
-          "Frontend team completed user authentication",
-          "Backend API integration in progress",
-          "Database optimization needed"
+          "ทีมฟรอนต์เอนด์ทำการยืนยันตัวตนผู้ใช้เสร็จแล้ว",
+          "การรวม API แบ็กเอนด์กำลังดำเนินการ",
+          "จำเป็นต้องปรับปรุงฐานข้อมูล"
         ],
         todoItems: [
-          "Review pull requests",
-          "Help with API integration",
-          "Schedule database optimization meeting"
+          "ตรวจสอบคำขอดึงข้อมูล",
+          "ช่วยเหลือเรื่องการรวม API",
+          "กำหนดการประชุมเพื่อปรับปรุงฐานข้อมูล"
         ]
       },
       {
         id: 5,
-        title: "Research Paper",
+        title: "งานวิจัย",
         mode: "pdf",
-        summary: "Read research paper on AI applications in healthcare. Promising results for diagnostic assistance.",
+        summary: "อ่านงานวิจัยเกี่ยวกับการประยุกต์ใช้ AI ในด้านการดูแลสุขภาพ ผลลัพธ์ที่น่าสนใจสำหรับการช่วยวินิจฉัย",
         keyPoints: [
-          "AI improves diagnostic accuracy by 15%",
-          "Implementation challenges include data privacy",
-          "Cost-benefit analysis shows positive ROI"
+          "AI ช่วยเพิ่มความแม่นยำในการวินิจฉัยถึง 15%",
+          "ความท้าทายในการนำไปใช้รวมถึงความเป็นส่วนตัวของข้อมูล",
+          "การวิเคราะห์ต้นทุนและผลประโยชน์แสดงผลตอบแทนเชิงบวก"
         ],
         todoItems: [
-          "Summarize key findings",
-          "Share with healthcare team",
-          "Explore potential applications"
+          "สรุปผลการค้นพบที่สำคัญ",
+          "แบ่งปันกับทีมด้านการดูแลสุขภาพ",
+          "สำรวจการประยุกต์ใช้ที่เป็นไปได้"
         ]
       }
     ]
@@ -112,5 +112,5 @@ export const getSummaryById = (id) => {
 // Helper function to format date
 export const formatDate = (dateString) => {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  return new Date(dateString).toLocaleDateString(undefined, options);
+  return new Date(dateString).toLocaleDateString('th-TH', options);
 };

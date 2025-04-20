@@ -44,14 +44,10 @@ function HomePage({ onPageChange }) {
       {isLoading ? (
         <div className="flex flex-col items-center justify-center min-h-[60vh]">
           <div className={`w-12 h-12 rounded-full border-4 border-slate-200 dark:border-slate-700 border-t-${selectedColor}-500 animate-spin`}></div>
-          <p className="mt-4 text-slate-500 dark:text-slate-400">Loading your notes...</p>
+          <p className="mt-4 text-slate-500 dark:text-slate-400">กำลังโหลดบันทึกของคุณ...</p>
         </div>
       ) : (
         <div className={`transition-all duration-500 ${animateIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Welcome back</h1>
-            <p className="text-slate-500 dark:text-slate-400">Continue where you left off or create a new note</p>
-          </div>
 
           <ModeSelector 
             selectedMode={selectedMode} 
@@ -69,7 +65,7 @@ function HomePage({ onPageChange }) {
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
                 </svg>
-                Start Recording
+                เริ่มการบันทึก
               </div>
             </ActionButton>
 
@@ -84,15 +80,15 @@ function HomePage({ onPageChange }) {
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
                 </svg>
-                Upload PDF
+                อัปโหลด PDF
               </div>
             </ActionButton>
           </div>
 
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-semibold text-slate-900 dark:text-white">Recent Summaries</h2>
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-white">สรุปล่าสุด</h2>
             <button className="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors">
-              View All
+              ดูทั้งหมด
             </button>
           </div>
 
