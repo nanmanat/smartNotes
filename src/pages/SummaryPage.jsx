@@ -119,7 +119,7 @@ function SummaryPage({ onPageChange, pageParams }) {
             <h1 className="text-3xl font-bold text-slate-900 dark:text-white">{summaryData.title}</h1>
           </div>
           <p className="text-slate-500 dark:text-slate-400 ml-7">
-            {summaryData.keyPoints.length} key points • {summaryData.todoItems.length} action items
+            {summaryData.keyPoints.length} ประเด็นสำคัญ • {summaryData.todoItems.length} action items
           </p>
         </div>
 

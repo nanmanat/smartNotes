@@ -6,7 +6,7 @@ function DayCard({ date, summaries, onViewDetails, onViewTodos }) {
   // Get day and month for the date badge
   const dateObj = new Date(date);
   const day = dateObj.getDate();
-  const month = dateObj.toLocaleString('default', { month: 'short' });
+  const month = dateObj.toLocaleString('th-TH', { month: 'short',  });
 
   // Get mode icon based on summary mode
   const getModeIcon = (mode) => {

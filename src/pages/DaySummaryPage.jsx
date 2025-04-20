@@ -87,7 +87,7 @@ function DaySummaryPage({ onPageChange, pageParams }) {
   // Get day and month for the date badge
   const dateObj = new Date(dayData.date);
   const day = dateObj.getDate();
-  const month = dateObj.toLocaleString('default', { month: 'short' });
+  const month = dateObj.toLocaleString('th-TH', { month: 'short' });
 
   return (
     <div className="container mx-auto px-4 py-6 max-w-2xl">
@@ -104,8 +104,8 @@ function DaySummaryPage({ onPageChange, pageParams }) {
               {formatDate(dayData.date)}
             </h1>
             <p className="text-slate-500 dark:text-slate-400">
-              {dayData.summaries.length} {dayData.summaries.length === 1 ? 'summary' : 'summaries'} • 
-              {dayData.summaries.reduce((total, summary) => total + summary.keyPoints.length, 0)} key points
+              {dayData.summaries.length} {dayData.summaries.length === 1 ? 'บทสรุป' : 'บทสรุป'} •
+              {dayData.summaries.reduce((total, summary) => total + summary.keyPoints.length, 0)} ประเด็นสำคัญ
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ function DaySummaryPage({ onPageChange, pageParams }) {
                 }>
                   <p className="text-slate-700 dark:text-slate-300 mb-4">{summary.summary}</p>
 
-                  <h4 className="font-medium mb-2 text-slate-900 dark:text-white">Key Points:</h4>
+                  <h4 className="font-medium mb-2 text-slate-900 dark:text-white">ประเด็นสำคัญ:</h4>
                   <ul className="space-y-2 pl-5 text-slate-700 dark:text-slate-300 mb-4">
                     {summary.keyPoints.map((point, index) => (
                       <li key={index} className="relative">
